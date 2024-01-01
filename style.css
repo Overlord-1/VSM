@@ -1,15 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins&family=Roboto+Slab&display=swap");
 
 * {
+  background-image: url(assets/loginimage.jpg);
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
 .hero-page {
-  background: #000;
+  background-image: url(assets/loginimage.jpg);
   width: 100%;
   height: 100vh;
+  display: flex;
+}
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
 }
 
 .dashboard {
@@ -22,7 +29,7 @@
     rgba(35, 35, 35, 0) 100%
   );
   min-height: auto;
-  width: 15%;
+  width: 15vw;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -36,9 +43,9 @@
 }
 
 .custom-hr {
-  width: 80%; 
+  width: 80%;
   border: none;
-  border-top: 2px solid #5e5e5e;    
+  border-top: 2px solid #5e5e5e;
   transition: width 0.3s ease;
 }
 
@@ -53,11 +60,165 @@
   color: rgb(151, 151, 151);
   width: 80%;
   transition: 0.35s all;
+}
+
+.dash-item:hover {
+  color: #050505;
+  background-color: rgb(151, 151, 151);
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 1.5rem;
+  margin-left: 3rem;
+  margin-bottom: 4rem;
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  color: white;
+  letter-spacing: 5px;
+  text-shadow: 8px 8px 10px rgba(0, 255, 255, 0.4);
+}
+
+.cardContainer {
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: space-around;
   
 }
 
-.dash-item:hover{
-    color: #050505;
-    background-color: rgb(151, 151, 151);
+.mainData1,.mainData2,.mainData3
+{
+  font-size: 3rem;
+  font-family: "poppins";
+  color: antiquewhite;
+}
+.row1{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.card-title
+{
+  font-size: 1.5rem;
+  color: whitesmoke;
+  font-family: "Inter",sans-serif;
+  margin-right: 2rem;
+}
+.element {
+  background: linear-gradient(
+      180deg,
+      rgba(30, 30, 30, 0.2) 0%,
+      rgba(48, 65, 81, 0.2) 100%
+    ),
+    #1e1e1e;
+  width: 25vw;
+  height: 100%;
+  border-radius:2rem;
+  padding: 2rem;
+  margin-right: 20px;
+  box-shadow: 4.9px -9.8px 19.8px rgba(188, 187, 187, 0.49);
+
+}
+/* 
+.card2 {
+  background-color: rgb(251, 134, 193);
+  width: 33%;
+  height: 100%;
+  border-radius:2rem;
+  padding: 2rem;
+  margin-right:20rem ;
 }
 
+.card3 {
+  background-color: rgb(114, 133, 21);
+  width: 33%;
+  height: 100%;
+  border-radius:2rem;
+  padding: 2rem;
+  margin-right:20rem ;
+} */
+/* 
+.cards {
+  position: relative;
+  top: 2em;
+  left: 3rem;
+  width: 30.185rem;
+  height: 20.375rem;
+  border-radius: 2.813rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20rem;
+}
+
+.card-main,
+.card-back {
+  top: 0;
+  left: 0;
+  width: 75%;
+  height: 75%;
+  border-radius: 2.813rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-main {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 2;
+  background: linear-gradient(
+      180deg,
+      rgba(30, 30, 30, 0.2) 0%,
+      rgba(48, 65, 81, 0.2) 100%
+    ),
+    #1e1e1e;
+  transition: background-color 0.3s ease;
+}
+
+@media (hover: hover) {
+  .card-main:hover {
+    background: linear-gradient(
+        180deg,
+        rgba(30, 30, 30, 0.2) 0%,
+        rgba(48, 65, 81, 0.2) 100%
+      ),
+      #17363c99;
+  }
+}
+
+.card-main p {
+  position: absolute;
+  top: 12%;
+  left: 10%;
+  font-size: 2rem;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  color: white;
+}
+
+.card-main img.right-vector {
+  position: absolute;
+  top: 12%;
+  left: 80%;
+  width: 2rem;
+  height: 3rem;
+  margin-left: 0.25rem;
+}
+
+.card-back {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  z-index: 1;
+  background: linear-gradient(
+      307deg,
+      #fff -61.89%,
+      rgba(255, 255, 255, 0) 84.48%
+    ),
+    #1e1e1e;
+} */

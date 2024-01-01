@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(assets/loginimage.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+#algn {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#vsmlogo {
+    width: 50%;
+    max-width: 200px;
+    margin-top: 10vh;
+}
+
+#container {
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    margin-top: 20px;
+}
+
+#container .head {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.input-container .inpt {
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+}
+
+.rem-forgot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin: 10px;
+}
+
+.rem-forgot span {
+    margin-top: 10px;
+}
+
+.rem-forgot span a {
+    text-decoration: none;
+    color: white;
+}
+
+.rem-forgot span a:hover {
+    color: #ffc3d2;
+}
+
+.input-container .btn {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.input-container .btn:hover {
+    background-color: #ffc3d2;
+}
+
+#container .footer {
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+#container .footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    margin: 10px;
+}
+
+#container .footer a:hover {
+    color: #ffc3d2;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 600px) {
+    #container {
+        width: 90%;
+    }
+
+    .input-container .inpt {
+        width: 100%;
+    }
+
+    #container .footer {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #vsmlogo {
+        width: 80%;
+        max-width: 150px;
+    }
+
+    #container {
+        border-radius: 5px;
+    }
+
+    .input-container .inpt {
+        font-size: 0.9rem;
+        padding: 8px;
+        margin: 8px 0;
+    }
+
+    .input-container .btn {
+        margin: 8px;
+        padding: 8px;
+        border-radius: 8px;
+        font-size: 0.9rem;
+    }
+
+    #container .footer {
+        font-size: 0.6rem;
+        margin-top: 8px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(assets/loginimage.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    filter: blur(8px);
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+#algn{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#vsmlogo {
+    size: 5vh;
+    position: absolute;
+    top: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+#container{
+    border: 0.2vw solid white;
+    border-radius: 2vw;
+    width: 25vw;
+    height: 47vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    backdrop-filter: blur(5vw);
+    z-index: 1;
+}
+
+#container .head{
+    font-weight: 700;
+    font-size: larger;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    width: 22vw;
+}
+
+.input-container .inpt{
+    padding: 1vw;
+    margin: 0.5vw 0.5vw;
+    border: 0.2vw solid white;
+    border-radius: 1vh;
+    background-color: transparent;
+    color: white;
+}
+
+::placeholder {
+    font-weight: 600;
+    color: white;
+    opacity: 1;
+}
+
+.rem-forgot{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 1vw;
+    font-size: 0.9vw;
+    font-weight: 400;
+    margin: 0.8vh;
+}
+
+.rem{
+    display: flex;
+    align-items: center;
+}
+
+.rem-forgot span a{
+    text-decoration: none;
+    color: white;
+}
+
+.rem-forgot span a:hover{
+    color: #ffc3d2;
+}
+
+.input-container .btn{
+    margin: 1vh 1vh;
+    padding: 1vh 1vh;
+    border: none;
+    border-radius: 2.5vh;
+    font-weight: 700;
+}
+
+.input-container .btn:hover{
+    background-color: #ffc3d2;
+}
+
+#container .footer{
+    font-size: 1.5vh;
+    font-weight: 400;
+}
+
+#container .footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    margin: 1vh 1vh;
+}
+
+#container .footer a:hover{
+    color: #ffc3d2;
+} */
