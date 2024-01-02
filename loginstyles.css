@@ -21,8 +21,9 @@ body {
 
 #vsmlogo {
     width: 50%;
-    max-width: 200px;
-    margin-top: 10vh;
+    max-width: 150px;
+    margin-top: 1vh;
+    margin-left: 10vh;
 }
 
 #container {
